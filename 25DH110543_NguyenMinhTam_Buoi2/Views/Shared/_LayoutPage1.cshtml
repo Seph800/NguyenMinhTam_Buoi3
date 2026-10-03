@@ -1,0 +1,539 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>IT Training Center</title>
+
+    <link href="~/Content/mystyle/ITTrainingCenterStyle1.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="brand">
+
+            <div class="logo">💻</div>
+
+            <div class="brand-text">
+                <h1>IT Training Center</h1>
+                <p>Learn Technology - Build Your Future</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses"> Courses</a>
+        <a href="#tuition">Tuition</a>
+        <a href="#registration">Registration</a>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h2>Professional IT Training Programs</h2>
+        <p>
+            HTML - CSS - JavaScript - ASP.NET MVC - Database
+        </p>
+    </section>
+
+    <!-- MAIN -->
+    <main class="main-cotainer">
+        <!-- Left Menu -->
+        <aside class="left-menu">
+            <h3>Quick Menu</h3>
+
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#tuition">Tuition</a>
+            <a href="#registration" class="register-link">
+                Register
+            </a>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <section class="main-content">
+
+            <!-- WELCOME -->
+            <section id="home" class="content-box">
+                <h2 id="welcome-title"></h2>
+
+                <p id="welcome-message"></p>
+
+                <p>
+                    Our course are designed for beginners and students
+                    who want to build a striong foundation in IT.
+                </p>
+            </section>
+
+            <!-- COURSES -->
+            <section id="courses" class="content-box">
+
+                <h2>Available Courses</h2>
+
+                <div class="course-list">
+                    <!-- Course 1 -->
+                    <article class="course-card">
+
+                        <div class="course-icon">🌐</div>
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Learn how to create websites using HTML and CSS.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+                    </article>
+
+                    <!-- Course 2 -->
+                    <article class="course-card">
+
+                        <div class="course-icon">⚡</div>
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Learn the basic concepts of JavaScript
+                            and interactive web pages.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+                    </article>
+
+                    <!-- Course 3 -->
+                    <article class="course-card">
+
+                        <div class="course-icon">🖥️</div>
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Learn how to build web applications
+                            using ASP.NET MVC.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+                    </article>
+
+                    <!-- Course 4 -->
+                    <article class="course-card">
+
+                        <div class="course-icon">🗄️</div>
+
+                        <h3 class="course-name"></h3>
+
+                        <p>
+                            Learn basic database concepts and SQL
+                            data management.
+                        </p>
+
+                        <a href="#registration">
+                            Learn More
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- COURSE DETAIL -->
+            <section class="course-detail-section">
+
+                <h2> JavaScript Course Detail</h2>
+
+                <button type="button" onclick="showCourseDetail()">
+                    view Javascript Course Info
+                </button>
+
+                <div id="course-detail"></div>
+            </section>
+
+            <!-- TUITION TABLE -->
+            <section id="tuition" class="content-box">
+
+                <h2>Course List - Tuition Fee</h2>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Course Name</th>
+                            <th>Duration</th>
+                            <th>Tuition Fee</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>HTML & CSS</td>
+                            <td>4 Weeks</td>
+                            <td>$100</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>JavaScript</td>
+                            <td>6 Weeks</td>
+                            <td>$150</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>ASP.NET MVC</td>
+                            <td>8 Weeks</td>
+                            <td>$200</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Database</td>
+                            <td>6 Weeks</td>
+                            <td>$150</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+            <!-- SIGN-UP FORM -->
+            <section id="registration" class="content-box">
+                <h2>Course Registration</h2>
+
+                <form id="registration-form">
+
+                    <!-- Full Name -->
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+                        <input type="text"
+                               id="fullName"
+                               name="fullName"
+                               placeholder="Enter your full name"
+                               required />
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="Enter your email"
+                               required />
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input type="tel"
+                               id="phone"
+                               name="phone"
+                               placeholder="Enter 10 digit phone number"
+                               pattern="[0-9]{10}"
+                               required />
+                    </div>
+
+                    <!-- Course -->
+                    <div class="form-group">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+                        <select id="course"
+                                name="course"
+                                required>
+
+                            <option value="">
+                                -- Select Course --
+                            </option>
+
+                            <option value="HTML & CSS">
+                                HTML & CSS
+                            </option>
+
+                            <option value="JavaScript">
+                                JavaScript
+                            </option>
+
+                            <option value="ASP.NET MVC">
+                                ASP.NET MVC
+                            </option>
+
+                            <option value="Database">
+                                Database
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- Learning Mode -->
+                    <div class="form-group">
+
+                        <label>
+                            Learning Mode
+                        </label>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input type="radio"
+                                       name="learningMode"
+                                       value="Online" />
+                                Online
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="learningMode"
+                                       value="Offline" />
+                                Offline
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="learningMode"
+                                       value="Hybrid" />
+                                Hybrid
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Class Schedule -->
+                    <div class="form-group">
+
+                        <p>Class Schedule</p>
+
+                        <div class="radio-group">
+
+                            <label>
+                                <input type="radio"
+                                       name="schedule"
+                                       value="morning" />
+                                Morning
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="schedule"
+                                       value="afternoon" />
+                                Afternoon
+                            </label>
+
+                            <label>
+                                <input type="radio"
+                                       name="schedule"
+                                       value="evening" />
+                                Evening
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Sign-up Button -->
+
+                    <button type="button" onclick="registerCourse()">
+                        Register Now!
+                    </button>
+                </form>
+            </section>
+
+            <!-- Sign-Up Result -->
+            <div id="registration-result"
+                 class="registration-result"></div>
+
+            <!-- Student Reviews -->
+            <section class="content-box">
+                <h2>Student Reviews</h2>
+
+                <div class="reviews">
+
+                    <!-- REVIEWS 1 -->
+                    <article class="review-card">
+
+                        <div class="avatar">
+                            👨🏻‍💻
+                        </div>
+
+                        <h3 class="review-name"></h3>
+
+                        <p class="stars">
+                            ★★★★★
+                        </p>
+
+                        <p>
+                            The HTML and CSS course is easy to understand.
+                            The teacher explains each lesson clearly
+                        </p>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="review-card">
+                        <div class="avatar">
+                            👩🏻‍💻
+                        </div>
+
+                        <h3 class="review-name"></h3>
+
+                        <p class="stars">
+                            ★★★★★
+                        </p>
+
+                        <p>
+                            I Learned many useful skills and can now
+                            create a simple website.
+                        </p>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="review-card">
+                        <div class="avatar">
+                            👨🏻‍🎓
+                        </div>
+
+                        <h3 class="review-name"></h3>
+
+                        <p class="stars">
+                            ★★★★☆
+                        </p>
+
+                        <p>
+                            The lesson are practical and the learning
+                            enviroment is very comfortable.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- DOM READING -->
+            <section class="dom-demo">
+                <h2> DOM Reading Demo </h2>
+
+                <div id="demo-content">
+                    HTML
+                    <span style="display:none">
+                        Css
+                    </span>
+                    JavaScript
+                </div>
+                <br>
+
+                <button type="button"
+                        onclick="showInnerHTML()">
+                    innerHTML
+                </button>
+
+                <button type="button"
+                        onclick="showInnerText()">
+                    innerText
+                </button>
+
+                <button type="button"
+                        onclick="showTextContent()">
+                    textContent
+                </button>
+
+                <pre id="content-result"></pre>
+            </section>
+
+        </section>
+
+        <!-- RIGHT ASIDE -->
+        <aside class="right-aside">
+
+            <!-- Availeble Course -->
+            <div class="side-box">
+
+                <h3> Available Courses</h3>
+
+                <ul id="quick-course-list"></ul>
+            </div>
+
+            <!-- Upgrade -->
+            <div class="upgrade-box">
+
+                <h3>Upgrade your skills!</h3>
+
+                <p>
+                    Improve your technology skills
+                    and build your future
+                </p>
+
+                <a href="#courses">
+                    View Courses
+                </a>
+            </div>
+
+            <!-- Benefits -->
+            <div class="side-box">
+
+                <h3>Training Benefits</h3>
+
+                <ul>
+                    <li>Experienced Instuctors</li>
+                    <li>Flexible Schedule</li>
+                    <li>Certificate Provide</li>
+                </ul>
+            </div>
+
+            <!-- Future -->
+            <div class="future-box">
+
+                <h3>Your Future Starts Here</h3>
+
+                <p>
+                    Skills for a Brighter Tomorrow
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer-info">
+
+        <div class="footer-item">
+            <strong>Email</strong>
+            <p>info@ittraining.com</p>
+        </div>
+
+        <div class="footer-item">
+            <strong>Phone</strong>
+            <p>099558</p>
+        </div>
+
+        <div class="footer-item">
+            <strong>Address</strong>
+            <p>Ho Chi Minh City, Vietnam</p>
+        </div>
+
+        <div class="footer-item">
+            <strong>Copyright</strong>
+            <p>2026 IT Training Center</p>
+        </div>
+    </footer>
+
+    @RenderBody()
+
+    <script src="~/Scripts/myjs/ITTrainingCenter.js"></script>
+</body>
+</html>

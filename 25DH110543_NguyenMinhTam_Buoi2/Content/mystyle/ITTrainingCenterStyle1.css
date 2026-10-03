@@ -1,0 +1,604 @@
+﻿/* TONG HOP */
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f5f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    background-color: #073b66;
+    color: white;
+    padding: 20px 40px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    color: #073b66;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.brand-text h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.brand-text p {
+    margin: 8px 0 0;
+}
+
+/* Dieu Huong */
+
+nav {
+    background-color: #052d4d;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+    nav a {
+        color: white;
+        padding: 15px 25px;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            background-color: #f39c12;
+            color: white;
+        }
+
+/* BANNER */
+
+.banner {
+    background-color: #f4b942;
+    text-align: center;
+    padding: 45px 20px;
+    color: #222;
+}
+
+    .banner h2 {
+        margin: 0 0 10px;
+        font-size: 32px;
+    }
+
+    .banner p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+/* MAIN LAYOUT */
+
+main {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+/* LEFT MENU */
+.left-menu {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
+    .left-menu h3 {
+        margin-top: 0;
+        color: #073b66;
+    }
+
+    .left-menu a {
+        display: block;
+        background-color: #eef3f7;
+        color: #333;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+        .left-menu a:hover {
+            background-color: #073b66;
+            color: white;
+        }
+
+    .left-menu .register-link {
+        background-color: #f39c12;
+        color: white;
+    }
+    
+    .left-menu .register-link:hover {
+        background-color: #d68910;
+    }
+
+    /* MAIN CONTENT */
+    .main-content{
+        flex: 1;
+
+        min-width: 0;
+    }
+
+    .content-box {
+        background-color: white;
+
+        padding: 25px;
+
+        margin-bottom: 20px;
+
+        border-radius: 8px;
+
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .content-box h2{
+        color: #073b66;
+
+        margin-top: 0;
+
+        border-bottom: 2px solid #f4b942;
+
+        padding-bottom: 10px;
+    }
+
+    /* COURSE CARDS */
+    .course-list{
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 15px;
+    }
+
+    .course-card{
+        background-color: #f5f8fa;
+
+        border: 1px solid #ddd;
+
+        border-radius: 8px;
+
+        padding: 20px;
+
+        text-align: center;
+
+        transition: 0.3s;
+    }
+
+    .course-card:hover{
+        transform: translateY(-5px);
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-icon{
+        font-size: 40px;
+    }
+
+    .course-card h3{
+        color: #073b66;
+    }
+
+    .course-card p {
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .course-card a {
+
+    display: inline-block;
+    background-color: #073b66;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+    .course-card a:hover {
+        background-color: #f39c12;
+    }
+        /* TABLE */
+
+        table{
+        width: 100%;
+
+        border-collapse: collapse;
+    }
+
+    th,
+    td{
+        border: 1px solid #ccc;
+
+        padding: 12px;
+
+        text-align: left;
+    }
+
+    th{
+        background-color: #073b66;
+
+        color: white;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f1f5f8;
+    }
+
+    tbody tr:hover{
+        background-color: #ffe7b0;
+    }
+
+    /* FORM */
+    .form-group{
+        margin-bottom: 18px;
+    }
+
+    .form-group > label{
+        display: block;
+
+        font-weight: bold;
+
+        margin-bottom: 7px;
+    }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select{
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+/* FOCUS */
+input:focus,
+select:focus{
+    outline: none;
+
+    border: 2px solid #073b66;
+}
+
+/* VALID */
+input:valid{
+    border-color: #27ae60;
+}
+
+/* INVALID */
+
+input:invalid{
+    border-color: #e74c3c;
+}
+
+/* RADIO */
+.radio-group{
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.radio-group label{
+    font-weight: normal;
+}
+
+.radio-group input:checked{
+    accent-color: #073b66;
+}
+
+/* BUTTON */
+
+button{
+    background-color: #f39c12;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #d68910;
+}
+
+button:active{
+    transform: scale(0.98);
+}
+
+/* REVIEWS */
+.reviews{
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.review-card{
+    text-align: center;
+
+    background-color: #f5f8fa;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.review-card:hover{
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.avatar{
+    width: 70px;
+
+    height: 70px;
+
+    margin: auto;
+
+    background-color: #e1e8ed;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+.review-card h3{
+    margin-bottom: 5px;
+}
+
+.stars{
+    color: #f39c12;
+
+    font-size: 20px;
+}
+
+/* RIGHT ASIDE */
+.right-aside{
+    width: 250px;
+
+    flex-shrink: 0;
+}
+
+.side-box,
+.upgrade-box,
+.future-box{
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.side-box h3,
+.upgrade-box h3,
+.future-box h3{
+    color: #073b66;
+
+    margin-top: 0;
+}
+
+.side-box a{
+    display: block;
+
+    color: #333;
+
+    padding: 8px 0;
+}
+
+.side-box a:hover{
+    color: #f39c12;
+}
+
+.side-box ul{
+    padding-left: 20px;
+
+    line-height: 2;
+}
+
+.upgrade-box{
+    background-color: #fff2d8;
+
+    border-left: 5px solid #f39c12;
+}
+
+.upgrade-box a{
+    display: inline-block;
+
+    background-color: #073b66;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+}
+
+.upgrade-box a:hover {
+    background-color: #f39c12;
+}
+
+.future-box{
+    background-color: #073b66;
+
+    color: white;
+
+    text-align: center;
+}
+
+.future-box h3{
+    color: white;
+}
+
+/* FOOTER */
+footer{
+    background-color: #073b66;
+
+    color:white;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 20px;
+
+    padding: 30px 20px;
+
+    margin-top: 30px;
+}
+
+.footer-item{
+    text-align: center;
+}
+
+.footer-item{
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+/* Tablet */
+
+@media (max-width: 1000px){
+    main {
+        flex-wrap: wrap;
+    }
+
+    .left-menu{
+        width: 100%;
+    }
+
+    .left-menu a{
+        display: inline-block;
+
+        margin-right: 5px;
+    }
+
+    .right-aside{
+        width: 100%;
+    }
+
+    .course-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    header{
+        padding: 20px;
+    }
+
+    .brand-text h1{
+        font-size: 22px;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+
+        padding: 0 10px;
+    }
+
+    .left-menu,
+    .main-content,
+    .right-aside{
+        width: 100%;
+    }
+
+    .left-menu a{
+        display: block;
+
+        margin-right: 0;
+    }
+
+    .course-list{
+        grid-template-columns: 1fr;
+    }
+
+    .reviews{
+        grid-template-columns: 1fr;
+    }
+
+    table{
+        font-size: 13px;
+    }
+
+    th,
+    td{
+        padding: 8px;
+    }
+
+    .radio-group{
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
